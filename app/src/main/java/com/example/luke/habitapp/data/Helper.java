@@ -26,7 +26,7 @@ public class Helper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String SQL_CREATE_TABLE =  "CREATE TABLE " + Contract.HabitsEntry.TABLE_NAME + " (" + Contract.HabitsEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + Contract.HabitsEntry.COLUMN_HABIT_NAME + " TEXT , " + Contract.HabitsEntry.COLUMN_HABIT_INTERVAL + " INTEGER , ";sqLiteDatabase.execSQL(SQL_CREATE_TABLE);
+        String SQL_CREATE_TABLE =  "CREATE TABLE " + Contract.HabitsEntry.TABLE_NAME + " (" + Contract.HabitsEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + Contract.HabitsEntry.COLUMN_HABIT_NAME + " TEXT , " + Contract.HabitsEntry.COLUMN_HABIT_INTERVAL + " INTEGER); ";sqLiteDatabase.execSQL(SQL_CREATE_TABLE);
     }
 
 
